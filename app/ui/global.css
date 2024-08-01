@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Ejemplo de cómo usar la fuente en tus estilos */
+body {
+  font-family: 'Teachers', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+img,
+span,
+label,
+input,
+select,
+button,
+ion-icon {
+  display: block;
+}
+
+input,
+select,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input,
+select {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--cadet-gray);
+}
+.swal2-popup {
+  font-size: 1.1rem !important;
+}
+
+.Button_Form {
+  @apply rounded-md bg-custom-secondary px-4 py-4 text-white;
+}
+
+/* ************************* */
+/* Para inputs de tipo phone */
+/* ************************* */
+.react-international-phone-input,
+.react-international-phone-country-selector-button {
+  background-color: rgb(229 231 235) !important;
+  height: 3.2rem !important;
+  padding: 0 1rem !important;
+}
+
+/***************/
+/* FORMULARIOS */
+/***************/
+/* label */
+.label-form {
+  @apply block text-sm font-bold text-gray-700;
+}
+
+/* input */
+.input-form {
+  @apply block w-full appearance-none rounded-lg border border-gray-200 bg-gray-200 px-4 py-4 text-base leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none;
+}
+
+.input-error {
+  @apply text-sm text-red-500;
+}
+
+/* buttons */
+.btn {
+  @apply mt-4 rounded-lg px-6 py-3 font-bold;
+}
+
+.btn-confirm {
+  @apply bg-custom-fourth text-custom-primary hover:bg-custom-secondary hover:text-custom-primary;
+}
+
+.btn-cancel {
+  @apply bg-gray-300 hover:bg-gray-300/70;
+}
+
+.btn-disabled {
+  @apply w-40 cursor-not-allowed bg-gray-300 opacity-50;
+  @apply bg-gray-300 hover:bg-gray-300/70;
+}
+
+/* select  */
+.select-form {
+  @apply block h-16 rounded-full border border-solid border-gray-400 bg-gray-100 bg-gradient-to-r from-transparent from-60% via-amber-100 via-80% to-green-200 to-90% p-2.5 pl-4 text-base font-bold text-gray-600 focus:border-gray-400 focus:ring-1 focus:ring-gray-300;
+}
+
+.select-option {
+  @apply bg-gray-100 p-2 font-semibold text-gray-700  hover:bg-gray-300;
+}
+
+.search-icon {
+  @apply pointer-events-none absolute right-4 top-1/2 w-10 -translate-y-1/2 transform text-slate-700 transition-transform duration-300 group-hover:rotate-45;
+}
+
+.select-form-booking {
+  @apply block h-10 rounded-full border border-solid border-gray-400 bg-gray-100 bg-gradient-to-r from-transparent from-60% via-amber-100 via-80% to-green-200 to-90% p-2.5 pl-4 text-sm font-bold text-gray-600 focus:border-gray-400 focus:ring-1 focus:ring-gray-300;
+}
+
+.search-icon-booking {
+  @apply pointer-events-none absolute right-4 top-1/2 w-6 -translate-y-1/2 transform text-slate-700 transition-transform duration-300 group-hover:rotate-45;
+}
+
+/* linear gradien for footer */
+
+.gradient-footer{
+  background: rgb(39,59,37);
+  background: linear-gradient(36deg, rgba(39,59,37,1) 0%, rgba(25,35,39,1) 100%); 
+}
